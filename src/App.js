@@ -38,8 +38,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header/>
+        <pre className="App-content">{this.state.content}</pre>
         <button onClick={this.updateContent}>Click Me!</button>
-        <pre>{this.state.content}</pre>
       </div>
     );
   }

@@ -18,8 +18,10 @@
   font-size: 1.5em;
 }
 
-.App-intro {
-  font-size: large;
+.App-content {
+  text-align: justify;
+  width:40%;
+  margin:10px auto;
 }
 
 @keyframes App-logo-spin {
