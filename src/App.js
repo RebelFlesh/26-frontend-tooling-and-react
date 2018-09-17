@@ -4,6 +4,17 @@ import './App.css';
 
 const cowsay = require('cowsay');
 
+class Header extends Component {
+  render(){
+    return (
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <h1 className="App-title">Generate Cowsay Lorem</h1>
+      </header>
+    )
+  }
+}
+
 class App extends Component {
   constructor(props){
     super(props)
@@ -25,6 +36,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Header/>
         <button onClick={this.updateContent}>Click Me!</button>
         <pre>{this.state.content}</pre>
       </div>
