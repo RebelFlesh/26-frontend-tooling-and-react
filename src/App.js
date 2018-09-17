@@ -11,6 +11,17 @@ class App extends Component {
     this.state = {
       content: cowsay.say({text : "hello world"}),
     }
+    this.updateContent = this.updateContent.bind(this);
+  }
+
+  updateContent(){
+    this.updateState(this.state.content = cowsay.say({text : "Bye world"}))
+  }
+
+  updateState(content){
+    this.setState({content});
+  }
+
   render() {
     return (
       <div className="App">
