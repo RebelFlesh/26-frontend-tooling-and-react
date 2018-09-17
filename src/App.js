@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 const cowsay = require('cowsay');
+const faker = require('faker');
 
 class Header extends Component {
   render(){
@@ -26,7 +27,7 @@ class App extends Component {
   }
 
   updateContent(){
-    this.updateState(this.state.content = cowsay.say({text : "Bye world"}))
+    this.updateState(this.state.content = cowsay.say({text : faker.lorem.lines()}))
   }
 
   updateState(content){
